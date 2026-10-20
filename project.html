@@ -13,6 +13,33 @@
     @media(max-width:850px){.links{gap:14px}.pill{display:none}.pillars{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(2,1fr)}.diagram{grid-template-columns:1fr}.belt{max-width:560px;width:100%;margin:auto}.models{grid-template-columns:1fr}.model{min-height:initial}.compact-grid{grid-template-columns:repeat(2,1fr)}.select-columns{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr 1fr}.row span:last-child{grid-column:1/-1}}
     @media(max-width:600px){.wrap{width:calc(100% - 36px)}.nav{height:60px}.links{display:none}.menu{display:block}.mobile{position:absolute;top:60px;left:0;right:0;background:#090b0df7;padding:10px 18px 18px;border-bottom:1px solid var(--line)}.mobile.open{display:grid}.mobile a{padding:13px 3px;border-bottom:1px solid #ffffff12;color:#c3cbca;font-size:14px}.hero{padding:43px 0 58px}.crumb{margin-bottom:38px}.hero h1{font-size:clamp(51px,14vw,75px)}.lede{font-size:15px}.flag{font-size:11px}.section,.ecosystem{padding:70px 0}.head{margin-bottom:29px}.head h2{font-size:43px}.head p{font-size:14px}.cols,.pillars,.flow,.checks{grid-template-columns:1fr}.card{padding:23px}.pillar{min-height:initial}.diagram{padding:23px 18px;gap:8px}.belt{height:150px}.band{height:68px}.callout{grid-template-columns:1fr}.road{grid-template-columns:1fr;gap:8px}.statement{padding:30px 24px;align-items:flex-start;flex-direction:column}.statement h2{font-size:42px}.footrow{flex-direction:column}.compact-grid,.privacy-grid,.select-columns{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:4px}.row span:last-child{grid-column:auto}.selector{padding:20px}.subhead{margin:40px 0 18px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+    /* Phone refinements */
+    @media(max-width:600px){
+      body{overflow-x:clip}.wrap{width:calc(100% - 32px)}
+      .nav{padding-top:env(safe-area-inset-top);height:calc(60px + env(safe-area-inset-top))}
+      .mobile{top:calc(60px + env(safe-area-inset-top));padding:10px 18px 20px}
+      .mobile a{min-height:48px;display:flex;align-items:center}
+      .menu{min-width:44px;min-height:44px;display:grid;place-items:center}
+      .hero{padding-top:36px}.crumb{margin-bottom:31px}
+      .hero h1{font-size:clamp(43px,12vw,62px);overflow-wrap:anywhere;max-width:100%}
+      .lede{max-width:38ch}.hero-row{align-items:stretch;flex-direction:column}
+      .hero-row a{min-height:46px;display:flex;align-items:center;justify-content:center}
+      .head h2{font-size:clamp(35px,10vw,43px);overflow-wrap:anywhere}
+      .card,.compact,.model,.pillar,.check,.statement,.selector,.diagram{overflow-wrap:anywhere}
+      .compact{padding:19px}.compact p,.card p,.card li{font-size:13px}
+      .select-group label{min-height:32px}.plan-select label{min-height:44px;display:flex;align-items:center}
+      .row{overflow-wrap:anywhere}.row span,.row b{min-width:0}
+      .button,.secondary{min-height:46px}
+      .statement .button{display:flex;width:100%;justify-content:center;text-align:center}
+      .footer,.road p,.privacy-item p{overflow-wrap:anywhere}
+    }
+    @media(max-width:380px){
+      .hero h1{font-size:42px}.wrap{width:calc(100% - 28px)}
+      .head h2,.statement h2{font-size:35px}.selector{padding:17px}.plan-select{flex-direction:column}
+      .belt{transform:scale(.91)}.card{padding:20px}
+    }
+    @media(min-width:601px) and (max-width:900px){.wrap{width:calc(100% - 44px)}.section,.ecosystem{padding:82px 0}.links{gap:13px}.row{gap:14px}}
   </style>
 </head>
 <body>
